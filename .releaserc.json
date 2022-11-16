@@ -12,7 +12,7 @@
       {
         "assets": [
           {
-            "path": "./lib/**/*.js, ./example.js, ./README.md",
+            "path": ["lib", "./example.js", "./README.md"],
             "name": "patoi-oss-cache",
             "label": "patoi-oss-cache"
           }
