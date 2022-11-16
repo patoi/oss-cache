@@ -1,0 +1,16 @@
+{
+  "debug": false,
+  "repositoryUrl": "https://github.com/patoi/oss-cache.git",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    "@semantic-release/git"
+  ]
+}

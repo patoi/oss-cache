@@ -1,6 +1,6 @@
 {
   "name": "@patoi/oss-cache",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Node.js memory cache with TTL",
   "homepage": "https://github.com/patoi/oss-cache",
   "main": "index.js",
@@ -19,23 +19,40 @@
     "node": ">=18.12.1",
     "pnpm": ">=7.12.2"
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "lint-staged": {
     "*.{js,cjs,json,yml}": "prettier --write --plugin-search-dir=.",
     "*.{js,cjs}": "eslint --cache --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patoi/oss-cache.git"
   },
   "scripts": {
     "prepare": "husky install",
     "test": "mocha -c \"./**/*.spec.js\"",
     "format:check": "prettier --check --plugin-search-dir=. . ",
     "format": "prettier --write --plugin-search-dir=. .",
-    "lint": "eslint --ignore-path .gitignore ."
+    "lint": "eslint --ignore-path .gitignore .",
+    "prepare-release": "git pull && pnpm install --frozen-lockfile --offline && pnpm format:check && pnpm lint && pnpm test",
+    "release": "pnpm prepare-release && semantic-release --no-ci && pnpm post-release",
+    "post-release": "git push && git push --tags && echo 'released: '$npm_package_version",
+    "commit": "cz"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "commitizen": "^4.2.5",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "mocha": "^10.1.0",
+    "semantic-release": "^19.0.5",
     "sinon": "^14.0.2"
   },
   "dependencies": {
