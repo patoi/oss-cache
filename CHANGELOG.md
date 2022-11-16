@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/patoi/oss-cache/compare/v1.0.10...v1.0.11) (2022-11-16)
+
+
+### Bug Fixes
+
+* glob patter ([ba15101](https://github.com/patoi/oss-cache/commit/ba151016043f065f4524cf6c3b156ed97bb462b1))
+
 ## [1.0.10](https://github.com/patoi/oss-cache/compare/v1.0.9...v1.0.10) (2022-11-16)
 
 
