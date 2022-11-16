@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/patoi/oss-cache/compare/v1.0.8...v1.0.9) (2022-11-16)
+
+
+### Bug Fixes
+
+* npmrc user registrí ([b5ae2cd](https://github.com/patoi/oss-cache/commit/b5ae2cd9572759ee81ea5b914c7892598a41dd34))
+
 ## [1.0.8](https://github.com/patoi/oss-cache/compare/v1.0.7...v1.0.8) (2022-11-16)
 
 
