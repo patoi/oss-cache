@@ -1,5 +1,6 @@
 {
   "debug": false,
+  "branches": [{ "name": "main" }],
   "repositoryUrl": "github:patoi/oss-cache.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
