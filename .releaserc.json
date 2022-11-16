@@ -8,7 +8,13 @@
     [
       "@semantic-release/github",
       {
-        "assets": [{ "path": "./", "label": "patoi-oss-cache" }]
+        "assets": [
+          {
+            "path": "./",
+            "name": "patoi-oss-cache",
+            "label": "patoi-oss-cache"
+          }
+        ]
       }
     ]
   ]
