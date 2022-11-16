@@ -1,6 +1,6 @@
 {
   "name": "@patoi/oss-cache",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Node.js memory cache with TTL",
   "homepage": "https://github.com/patoi/oss-cache",
   "main": "index.js",
@@ -34,6 +34,7 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
+    "access": "public",
     "tag": "latest"
   },
   "scripts": {
