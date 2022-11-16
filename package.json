@@ -1,6 +1,6 @@
 {
   "name": "@patoi/oss-cache",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js memory cache with TTL",
   "homepage": "https://github.com/patoi/oss-cache",
   "main": "index.js",
@@ -39,7 +39,7 @@
     "format": "prettier --write --plugin-search-dir=. .",
     "lint": "eslint --ignore-path .gitignore .",
     "prepare-release": "git pull && pnpm install --frozen-lockfile --offline && pnpm format:check && pnpm lint && pnpm test",
-    "release": "pnpm prepare-release && HUSKY=0 semantic-release --no-ci && pnpm post-release",
+    "release": "pnpm prepare-release && HUSKY=0 NPM_TOKEN=$(cat secret.npm_token) semantic-release --no-ci && pnpm post-release",
     "post-release": "git push && git push --tags && echo 'released: '$npm_package_version",
     "cm": "cz"
   },
