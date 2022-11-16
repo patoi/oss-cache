@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/patoi/oss-cache/compare/v1.0.4...v1.0.5) (2022-11-16)
+
+
+### Bug Fixes
+
+* version number ([b35520a](https://github.com/patoi/oss-cache/commit/b35520a36b013d30e7304218940af3ceab8d6855))
+
 ## [1.0.4](https://github.com/patoi/oss-cache/compare/v1.0.3...v1.0.4) (2022-11-16)
 
 
