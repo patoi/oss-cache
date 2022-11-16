@@ -1,7 +1,7 @@
 {
   "debug": false,
   "branches": [{ "name": "main" }],
-  "repositoryUrl": "github:patoi/oss-cache.git",
+  "repositoryUrl": "ssh://git@github.com:patoi/oss-cache.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
