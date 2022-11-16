@@ -39,7 +39,7 @@
     "format": "prettier --write --plugin-search-dir=. .",
     "lint": "eslint --ignore-path .gitignore .",
     "prepare-release": "git pull && pnpm install --frozen-lockfile --offline && pnpm format:check && pnpm lint && pnpm test",
-    "release": "pnpm prepare-release && HUSKY_SKIP_HOOKS=1 semantic-release --no-ci && pnpm post-release",
+    "release": "pnpm prepare-release && HUSKY=0 semantic-release --no-ci && pnpm post-release",
     "post-release": "git push && git push --tags && echo 'released: '$npm_package_version",
     "cm": "cz"
   },

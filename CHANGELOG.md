@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/patoi/oss-cache/compare/v1.0.1...v1.0.2) (2022-11-16)
+
+
+### Bug Fixes
+
+* release flow ([194f7f7](https://github.com/patoi/oss-cache/commit/194f7f72f64fc31684dded7cf038283bf5ace5e0))
+* release flow ([afa8522](https://github.com/patoi/oss-cache/commit/afa8522f0fab7349460bfe7045a7b0d2bc2f6ace))
+
 ## [1.0.1](https://github.com/patoi/oss-cache/compare/v1.0.0...v1.0.1) (2022-11-16)
 
 
