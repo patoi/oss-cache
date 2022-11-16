@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/patoi/oss-cache/compare/v1.1.0...v1.1.1) (2022-11-16)
+
+
+### Bug Fixes
+
+* change dir structure, add some notes to README ([b7caa7f](https://github.com/patoi/oss-cache/commit/b7caa7fdd524e4cae29daed6d56169ede7a149f8))
+
 # [1.1.0](https://github.com/patoi/oss-cache/compare/v1.0.0...v1.1.0) (2022-11-16)
 
 
