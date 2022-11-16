@@ -1,5 +1,4 @@
-# oss-cache
-Node.js memory cache with TTL
+# oss-cache - Zero dependency Node.js memory cache with TTL
 
 oss-cache can handle multiple caches.
 
@@ -29,7 +28,6 @@ const value = cacheTest.get('key')
 
 // destroy a specific cache
 Caches.destroy('cacheTest)
-
 // destroy all cache, call before process exit
 Cache.destroyAll()
 ```
