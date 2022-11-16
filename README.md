@@ -1,4 +1,4 @@
-# oss-cache - Zero dependency Node.js memory cache with TTL
+# Zero dependency Node.js memory cache with TTL
 
 oss-cache can handle multiple caches.
 
