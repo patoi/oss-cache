@@ -41,12 +41,13 @@
     "prepare-release": "git pull && pnpm install --frozen-lockfile --offline && pnpm format:check && pnpm lint && pnpm test",
     "release": "pnpm prepare-release && semantic-release --no-ci && pnpm post-release",
     "post-release": "git push && git push --tags && echo 'released: '$npm_package_version",
-    "commit": "cz"
+    "cm": "cz"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
     "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.2",
