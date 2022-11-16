@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/patoi/oss-cache/compare/v1.0.3...v1.0.4) (2022-11-16)
+
+
+### Bug Fixes
+
+* npm token secret ([2de3d5f](https://github.com/patoi/oss-cache/commit/2de3d5f64a596e97e41c0891630a4cd4a7c7dbef))
+
 ## [1.0.3](https://github.com/patoi/oss-cache/compare/v1.0.2...v1.0.3) (2022-11-16)
 
 
