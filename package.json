@@ -1,6 +1,6 @@
 {
   "name": "@patoi/oss-cache",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Node.js memory cache with TTL",
   "homepage": "https://github.com/patoi/oss-cache",
   "main": "index.js",
