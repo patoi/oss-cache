@@ -1,0 +1,44 @@
+{
+  "name": "@patoi/oss-cache",
+  "version": "1.0.0",
+  "description": "Node.js memory cache with TTL",
+  "homepage": "https://github.com/patoi/oss-cache",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "Node.js",
+    "memcache",
+    "memory",
+    "cache",
+    "open source"
+  ],
+  "author": "István Pató",
+  "license": "MIT",
+  "packageManager": "pnpm@7.12.2",
+  "engines": {
+    "node": ">=18.12.1",
+    "pnpm": ">=7.12.2"
+  },
+  "lint-staged": {
+    "*.{js,cjs,json,yml}": "prettier --write --plugin-search-dir=.",
+    "*.{js,cjs}": "eslint --cache --fix"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "test": "mocha -c \"./**/*.spec.js\"",
+    "format:check": "prettier --check --plugin-search-dir=. . ",
+    "format": "prettier --write --plugin-search-dir=. .",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "mocha": "^10.1.0",
+    "sinon": "^14.0.2"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
+}
