@@ -1,6 +1,6 @@
 {
   "name": "@patoi/oss-cache",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Node.js memory cache with TTL",
   "homepage": "https://github.com/patoi/oss-cache",
   "main": "index.js",
@@ -32,6 +32,10 @@
     "type": "git",
     "url": "git@github.com:patoi/oss-cache.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
   "scripts": {
     "prepare": "husky install",
     "test": "mocha -c \"./**/*.spec.js\"",
@@ -39,7 +43,7 @@
     "format": "prettier --write --plugin-search-dir=. .",
     "lint": "eslint --ignore-path .gitignore .",
     "prepare-release": "git pull && pnpm install --frozen-lockfile --offline && pnpm format:check && pnpm lint && pnpm test",
-    "release": "pnpm prepare-release && HUSKY=0 NPM_CONFIG_REGISTRY=https://registry.npmjs.org/ semantic-release --no-ci && pnpm post-release",
+    "release": "pnpm prepare-release && HUSKY=0 semantic-release --no-ci && pnpm post-release",
     "post-release": "git push && git push --tags && echo 'released: '$npm_package_version",
     "cm": "cz"
   },
