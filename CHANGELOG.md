@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/patoi/oss-cache/compare/v1.0.7...v1.0.8) (2022-11-16)
+
+
+### Bug Fixes
+
+* npm url ([4e65a2e](https://github.com/patoi/oss-cache/commit/4e65a2e9cd5b08b53688de3e14b109a03bd87ba0))
+
 ## [1.0.7](https://github.com/patoi/oss-cache/compare/v1.0.6...v1.0.7) (2022-11-16)
 
 
