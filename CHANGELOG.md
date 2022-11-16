@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/patoi/oss-cache/compare/v1.0.14...v1.0.15) (2022-11-16)
+
+
+### Bug Fixes
+
+* glob patter, and order of the plugins ([6793156](https://github.com/patoi/oss-cache/commit/6793156ef1aec4e630516f8c25e542b013a8881d))
+
 ## [1.0.14](https://github.com/patoi/oss-cache/compare/v1.0.13...v1.0.14) (2022-11-16)
 
 
