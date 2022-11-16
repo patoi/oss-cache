@@ -1,6 +1,6 @@
 import { EventEmitter } from 'node:events'
 // cache features
-import Caches from './lib/index.js'
+import Caches from './index.js'
 
 // cache events logger
 const logEmitter = new EventEmitter()

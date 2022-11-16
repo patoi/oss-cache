@@ -162,3 +162,7 @@ logEmitter.on('cache:log:getUnsafe', (name, key, value) =>
   console.log('getUnsafe()', { name, key, value })
 )
 ```
+
+5. Checkout `example.js` and `index.spec.js` for detailed using information.
+
+6. You can run example wit `node example.js` or test `pnpm i && pnpm test`
