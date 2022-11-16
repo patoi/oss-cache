@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/patoi/oss-cache/compare/v1.1.1...v1.1.2) (2022-11-16)
+
+
+### Bug Fixes
+
+* directory structure error fix ([cb38da5](https://github.com/patoi/oss-cache/commit/cb38da526beb8a8bd6d778abce20dcda503b8245))
+
 ## [1.1.1](https://github.com/patoi/oss-cache/compare/v1.1.0...v1.1.1) (2022-11-16)
 
 
