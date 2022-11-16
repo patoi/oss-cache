@@ -6,19 +6,19 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/git",
     "@semantic-release/npm",
     [
       "@semantic-release/github",
       {
         "assets": [
           {
-            "path": "./lib/**/*.js, example.js, README.md",
+            "path": "**",
             "name": "patoi-oss-cache",
             "label": "patoi-oss-cache"
           }
         ]
       }
-    ]
+    ],
+    "@semantic-release/git"
   ]
 }
