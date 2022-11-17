@@ -173,6 +173,8 @@ logEmitter.on('cache:log:getUnsafe', (name, key, value) =>
 )
 ```
 
-5. Checkout `example.js` and `index.spec.js` for detailed using information.
+5. Checkout `example.js` and `index.spec.js` **for detailed using information.**
 
 6. You can run example with `node example.js` or test `pnpm i && pnpm test`
+
+7. `Promise.all([ createCache1, createCache2, ... ])` faster than waterfall calls.
