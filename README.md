@@ -71,7 +71,7 @@ The cache may become stale if the asyncLoadFunction throws an error, or if the c
 
 ## Best practices
 
-1. Guard cache: check if the cache exists before using it.
+1. Check if the **cache exists** before using it.
 
 ```javascript
 // using cacheTest cache
@@ -80,14 +80,14 @@ if (!cacheTest) throw new Error('Missing cache!')
 const value = cacheTest.get('key')
 ```
 
-2. Guard cache value: check the returned value.
+2. Check the returned **value exists**
 
 ```javascript
 const value = cacheTest.get('unknown_key')
 if (value === undefined) { // handling undefined value }
 ```
 
-3. Guard outdated cache
+3. Handle when **cache data is out of date**
 
 ```javascript
 try {
@@ -175,4 +175,4 @@ logEmitter.on('cache:log:getUnsafe', (name, key, value) =>
 
 5. Checkout `example.js` and `index.spec.js` for detailed using information.
 
-6. You can run example wit `node example.js` or test `pnpm i && pnpm test`
+6. You can run example with `node example.js` or test `pnpm i && pnpm test`
