@@ -1,15 +1,19 @@
 # Zero dependency Node.js memory cache with TTL
 
-oss-cache can handle multiple caches.
+Load and cache lists on application launch with **automatic update of cached data.**
+
+Usage example: when starting the application, all country codes and names are read from the database into the cache, so the country name can be **easily and quickly retrieved.**
+The country cache automatically updates its content at the specified interval (TTL).
+
+`oss-cache` can handle **multiple caches with different TTL, and data source.**
 
 **Install:** `npm i @patoi/oss-cache`
 
 ## Using
 
 ```javascript
+// creating a cache in the startup process
 import Caches from '@patoi/oss-cache'
-
-// creating a cache
 await Caches.create({
   name: 'cacheTest',
   ttl: 5555,
@@ -18,18 +22,24 @@ await Caches.create({
     _map.set('key', 'value')
     return _map
   },
-  // optional
+  // optional: listening and logging cache events
   logEmitter
 })
 
-// using cacheTest cache
+...
+
+// using cacheTest cache somewhere in your app
+import Caches from '@patoi/oss-cache'
 const cacheTest = Caches.get('cacheTest')
 const value = cacheTest.get('key')
 
-// destroy a specific cache
+...
+
+// destroy a specific cache, or ...
 Caches.destroy('cacheTest)
-// destroy all cache, call before process exit
+// destroy all cache, before process exit in shutdown sequence
 Cache.destroyAll()
+
 ```
 
 - **name:** cache name
