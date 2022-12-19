@@ -49,21 +49,21 @@
     "cm": "cz"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
-    "@semantic-release/changelog": "^6.0.1",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
-    "commitizen": "^4.2.5",
+    "commitizen": "^4.2.6",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.27.0",
+    "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.2",
-    "lint-staged": "^13.0.3",
-    "mocha": "^10.1.0",
+    "lint-staged": "^13.1.0",
+    "mocha": "^10.2.0",
     "semantic-release": "^19.0.5",
-    "sinon": "^14.0.2"
+    "sinon": "^15.0.1"
   },
   "dependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^2.8.1"
   }
 }
