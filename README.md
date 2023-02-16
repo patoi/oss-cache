@@ -36,7 +36,7 @@ const value = cacheTest.get('key')
 ...
 
 // destroy a specific cache, or ...
-Caches.destroy('cacheTest)
+Caches.destroy('cacheTest')
 // destroy all cache, before process exit in shutdown sequence
 Cache.destroyAll()
 
