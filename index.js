@@ -224,6 +224,7 @@ async function init({ name, ttl = 30000, asyncLoadFunction, logEmitter }) {
 
     get(key) {
       if (isOutdated) {
+        /** @type {NodeJS.ErrnoException} */
         const error = new Error('Cache is outdated.')
         error.code = 'ERR_CACHE_OUT_OF_DATE'
         throw error
