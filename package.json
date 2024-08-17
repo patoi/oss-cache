@@ -38,7 +38,6 @@
     "tag": "latest"
   },
   "scripts": {
-    "prepare": "husky install",
     "test": "mocha -c \"./**/*.spec.js\"",
     "format:check": "prettier --check --plugin-search-dir=. . ",
     "format": "prettier --write --plugin-search-dir=. .",
@@ -49,20 +48,20 @@
     "cm": "cz"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.5",
-    "@commitlint/config-conventional": "^17.6.5",
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^18.16.16",
+    "@types/node": "^20.0.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.41.0",
-    "eslint-config-prettier": "^8.8.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
-    "mocha": "^10.2.0",
-    "prettier": "^2.8.8",
-    "semantic-release": "^21.0.2",
-    "sinon": "^15.1.0"
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.10.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "mocha": "^10.7.3",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.0.0",
+    "sinon": "^18.0.0"
   }
 }
